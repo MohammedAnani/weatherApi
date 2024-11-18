@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="home ">
+    <div class="nav-bar my-color ">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg   py-5">
+          <div class="container-fluid">
+            <div class="logo d-flex">
+              <img src="images/logo.png" alt="">
+              <div class="logo-caption ms-2">
+                <h1 class="fs-6 mb-0">Weather</h1>
+                <small>tagline goes here</small>
+              </div>
+            </div>
+            <button class="navbar-toggler bg-info border-0 shadow-none text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-3">
+                <li class="nav-item ">
+                  <a class="nav-link  active py-1 px-3 text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link py-1 px-3 text-white" href="#">News</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link py-1 px-3 text-white" href="#">Live cameras</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link py-1 px-3 text-white" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+
+                  <a class="nav-link py-1 px-3 text-white" href="#">Contact</a>
+                </li>
+
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container weather-container  ">
+
+      <div class="inp mt-5">
+        <input type="text" class="text-white form-control p-3 rounded-5 shadow-none border-0" id="searchInput"
+          placeholder="Enter a city name to check its weather...">
+
+
+      </div>
+
+      <div class="row g-3 align-items-stretch mt-2">
+        <!-- Sunday -->
+        <div class="col-md-4">
+          <div class="card weather-card p-3">
+            <div class="card-header d-flex justify-content-between">
+              <span id="todayName">Sunday</span>
+              <div class="date">
+                <span id="dateOne">17</span>
+                <span id="todayMonth">17</span>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h2 id="cityOne">Cairo</h2>
+              <h1 id="temperatureOne">21.3°C</h1>
+              <div class="weather-i con my-3">
+                <img class="weatherImg" id="weatherImg" src="moon-icon.png" alt="Clear Night">
+              </div>
+              <p id="conditionOne">Clear</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between fs-6">
+              <div class="x">
+                <i class="fas fa-umbrella "></i>
+                <span id="humidityOne"> 20%</span>
+              </div>
+              <div class="x">
+                <i class="fas fa-wind"></i>
+                <span id="windSpeedOne"> 18km/h</span>
+
+              </div>
+              <div class="x">
+                <i class="fas fa-compass"></i>
+                <span id="windDirectionOne"> East</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Monday -->
+        <div class="col-md-4 text-center">
+          <div class="card weather-card p-3 h-100">
+            <div class="card-header">
+              <span class="nextDay">Tomorrow</span>
+            </div>
+            <div class="card-body text-center">
+              <img class="nextImg" src="" alt="">
+              <h1 class="nextMaxTemp">25°</h1>
+              <h2 class="nextMinTemp">16°</h2>
+              <p class="nextCondition">Partly Cloudy</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tuesday -->
+        <div class="col-md-4 text-center">
+          <div class="card weather-card p-3 h-100">
+            <div class="card-header">
+              <span class="nextDay">Tuesday</span>
+            </div>
+            <div class="card-body text-center">
+              <img class="nextImg" src="" alt="">
+              <h1 class="nextMaxTemp">24.2°C</h1>
+              <h2 class="nextMinTemp">15.8°</h2>          
+              <p class="nextCondition">Sunny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid mt-4 py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Subscribe Section -->
+          <div class="col-md-8 mb-3 mb-md-0">
+            <div class="subscribe-container d-flex align-items-center">
+              <input type="text" class="form-control bg-transparent text-white border-0 shadow-none subscribe"
+                placeholder="Enter your email to subscribe...">
+              <button class="btn">Subscribe</button>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="col-md-4 text-md-end d-flex justify-content-center">
+            <div class="social-icons d-inline-flex gap-3 ">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-google-plus-g"></a>
+              <a href="#" class="fab fa-pinterest-p"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="copyright">
+              Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
