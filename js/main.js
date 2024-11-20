@@ -32,11 +32,13 @@ async function getApi(cityName){
  
 }
 // Call All Function
-async function startApp(city="cairo"){
+async function startApp(city="beni suef"){
 
   var api= await getApi(city)
   displayApi(api)
   nextDays(api)
+
+
   
   
   
